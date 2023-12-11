@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/scss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <title>Checkout 2</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg bg-body-light mx-auto">
+                    <div class="container-fluid">      
+                        <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Series
+                                </a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./catalogo.html">Catalogo Completo</a></li>
+                                <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                                <li><a class="dropdown-item" href="#">Calensario de Salida</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./form-contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="puntosDeVentas.html">Puntos de ventas</a>
+                            </li>
+                            </ul>
+                            <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                              <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <img src="assets/img/usuario2.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                </nav>
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="staticBackdropLabel">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body py-3">
+                    <div class="card mb-3 mx-auto">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="assets/img/portada1.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Kaiju No. 8</h5>
+                            <p class="card-text">This is a wider card with.</p>
+                            <p class="card-text"><small class="text-body-secondary">Valor: $$$</small></p>
+                            <a href="#" class="btn btn-danger"><i class="fa-solid fa-trash">quitar</i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3 mx-auto">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="assets/img/portada1.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Kaiju No. 8</h5>
+                            <p class="card-text">This is a wider card with.</p>
+                            <p class="card-text"><small class="text-body-secondary">Valor: $$$</small></p>
+                            <a href="#" class="btn btn-danger"><i class="fa-solid fa-trash">quitar</i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class=" row mx-auto">
+                      <a href="./metodo-pago-1.html" class="btn btn-danger">CONTINUAR CON EL PAGO<span> $$$</span></i></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="fondo-color-gris-pago">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Metodo de Pago</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <!------------CUADRO-PASO 1-POSIBLE DE EDITAR------->
+                    <div class="cuadro-formulario px-4 py-3">
+                    <div class="d-flex flex-row justify-content-between">
+                    <h3>1-Datos de Contacto</h3>
+                    <a class="link-dark" href="./metodo-pago-1.html"><p>Editar</p></a>
+                    </div>
+                    <p>Matías Castro, Calle 123 Esquina 456</p>
+                    <p>castromatias@hotmail.ar</p>
+                    </div>
+                    
+                    <!------------PARTE 2-ELEGIR MEDIO DE PAGO----------->
+                    <h3 class="mt-4">2-Pagas con</h3>
+                    <form method="" action="">
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <input type="radio" name="pago" id="" value="tarjeta">
+                                    <img class="mx-1" src="./assets/img/credit-card-icon.png" alt="" height="25px">
+                                    <label>Tarjeta de Credito/Debito</label>
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="d-flex flex-column">
+                                        <label for="numero-tarjeta">N° de la Tarjeta</label>
+                                        <input type="number" name="" id="numero-tarjeta" placeholder="1234 5678 9012 3456">
+                                    </div>
+
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <div class="d-flex flex-column mt-3">
+                                            <label for="fecha-vence">Fecha de Expiracion</label>
+                                            <input type="month" name="" id="fecha-vence" placeholder="03/24">
+                                        </div>
+
+                                        <div class="d-flex flex-column mt-3">
+                                            <label for="cvc-cvv">CVC/CVV</label>
+                                            <input type="number" name="" id="cvc-cvv" placeholder="111">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <div class="accordion-header ps-3 py-3">
+                                    <input type="radio" name="pago" id="" value="paypal">
+                                    <img src="./assets/img/paypal-icon.png" alt="" height="25px">
+                                    <label for="">Paypal</label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center mt-3">
+                                <button type="submit" class="boton2-form"><a href="./metodo-pago-3.html">Pagar $32.500</a></button>
+                            </div>
+                        </div>                    
+                    </form>
+                </div>
+
+                <div class="col-md-5">
+                    <!--------LISTADO DE PRODUCTO A PAGAR------->    
+                        <div class="d-flex flex-row mb-2">
+                            <img src="./assets/img/haikyu01.jpeg" height="150px">
+
+                            <div class="d-flex flex-column ps-2">
+                                <h4>Haikyu</h4>
+                                <p>Tomo 1</p>
+                                <div class="d-flex flex-row">
+                                    <p>1 Producto</p>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button class="signo-menos-pago rounded-circle ms-3">-</button>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button class="signo-mas-pago rounded-circle ms-3">+</button>
+                                    </div>
+                                </div>
+                                <p>$10.500</p>
+                            </div>
+                        </div>
+                        <div class="d-flex d-flex justify-content-center">
+                            <div class="borde-divisor-metodo-pago mb-2"></div>
+                        </div>
+                
+
+                <div class="borde-divisor-metodo-pago-1 pt-2 mb-2">
+                    <div class="d-flex flex-row">
+                        <img src="./assets/img/dragonballsuper01.jpg" height="150px">
+
+                            <div class="d-flex flex-column ps-2">
+                                <h4>Dragon Ball Super</h4>
+                                <p>Tomo 1</p>
+                                <div class="d-flex flex-row">
+                                    <p>2 Producto</p>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button class="signo-menos-pago rounded-circle ms-3">-</button>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button class="signo-mas-pago rounded-circle ms-3">+</button>
+                                    </div>
+                                </div>
+                                <p>$21.000</p>
+                            </div>
+                    </div>
+                </div>
+
+ 
+                <h5>Subtotal: $31.500</h5>
+                <h5>Envío: $1.000</h5>
+
+
+                <div class="borde-divisor-metodo-pago-2"></div>
+                    <h4 class="pt-2">Total: $32.500</h4>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-2 my-3">
+              <img class="logo" src="assets/img/logo.png" alt="">
+            </div>
+            <div class="col-md-3 my-3">
+              <div>
+                <h4><strong>Terminos y Politicas</strong></h4>
+                <div class="d-flex flex-column mb-3">
+                  <div class="p-1">Terminos y condiciones</div>
+                  <div class="p-1">Política de Privacidad</div>
+                  <div class="p-1">Política de Cookies</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 my-3">
+              <div>
+                <h4><strong>IVEA</strong></h4>
+                <div class="d-flex flex-column mb-3">
+                  <div class="p-1">Catalogo</div>
+                  <div class="p-1">Proximamente</div>
+                  <div class="p-1">Contacto</div>
+                </div>
+              </div>
+            </div>
+              <div class="col-md-3 my-3">
+                <div>
+                  <h4><strong>Nuestras Redes Sociales</strong></h4>
+                  <ul class="redesSociales">
+                    <li><i class="fab fa-facebook-square fa-2x"></i></li>
+                    <li><i class="fab fa-instagram fa-2x"></i></li>
+                    <li><i class="fab fa-twitter fa-2x"></i></li>
+                    <li><i class="fab fa-youtube fa-2x"></i></li>
+                    <li><i class="fab fa-twitch fa-2x"></i></li>
+                    <li><i class="fab fa-google fa-2x"></i></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="row">
+        <p class="copy">&copy; 2019 IVEA - Todos los derechos reservados.</p>
+      </div>
+    <script src="./assets/bootstrap-5.3.2/dist/js/bootstrap.js"></script>
+    
+</body>
+</html>

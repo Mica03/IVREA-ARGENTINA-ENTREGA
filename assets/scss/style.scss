@@ -1,0 +1,604 @@
+@import '../bootstrap-5.3.2/scss/bootstrap.scss';
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&family=Playfair+Display&family=Press+Start+2P&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Nunito&family=Open+Sans&family=Playfair+Display&family=Press+Start+2P&family=Roboto&display=swap');
+
+/* estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* vartiables */
+$tipo-fuente1: 'Roboto', sans-serif;
+$tipo-fuente2: 'Josefin Sans', sans-serif;
+$color-negro: black;
+$color-blanco: #FFFF;
+$color-rojo: #F41E1E;
+$color-cuerpo: #F9F9F9;
+$color-other1: #CACACA;
+$color-other2: #707070;
+$font-size: 12px;
+$font-size-P: 13px;
+
+
+$font-sizesH4: 15px;
+$font-sizesH3: 25px;
+$font-sizesH2: 30px;
+$font-sizesH1: 40px;
+
+/* estilos generales */
+
+body{
+    font-family: $tipo-fuente1;
+    background-color: $color-cuerpo;
+}
+
+header{
+    background-color: $color-blanco;
+}
+
+.seccion3 article{
+    overflow: hidden;
+    display: inline-block;
+    padding: 30px 70px 100px 90px;
+}
+
+.titulo{
+    padding: 10px;
+    align-items: center;
+    color: $color-negro;
+    background-color: $color-blanco;
+    text-align: center;
+}
+
+.seccion3 article img{
+    border-radius: 100%;
+    width: 150px;
+}
+
+.seccion3 article img:hover{
+    transform: scale(1.1);
+    transition: all ease-in-out 300ms;
+}
+
+.seccion3 article p{
+    font-style: oblique;
+    padding: 10px 40px;
+}
+
+/*  comienzo del carrosel */
+
+section.slider {
+    padding: 10px 0;
+    background: $color-cuerpo;
+    height: 100vh;
+}
+
+section.slider .title {
+    font-size: 42px;
+    position: relative;
+    top: 24px;
+}
+
+.slider-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+	margin-bottom: 50px;
+}
+
+.slide_content {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 0 30px 0 30px;
+    text-align: center;
+}
+
+button.slider__button {
+	background: $color-rojo;
+    border: 3px solid $color-rojo;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #0e0e16;
+    opacity: 1 !important;
+    border-radius: 10px;
+}
+
+button.slider__button:hover {
+    border: 3px solid $color-rojo;
+    background: transparent;
+    color: $color-rojo;
+}
+
+.slide_content p {
+    color: #fff;
+    font-family: $tipo-fuente1;
+    font-size: 22px;
+	letter-spacing: 1px;
+    background-color: black;
+}
+.slider .btns {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.slider .btns button {
+    height: 48px;
+    width: 150px;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    background: none;
+    font-family: charlieUltra;
+    border: 3px solid $color-rojo;
+    color: $color-rojo;
+	letter-spacing: 1px;
+}
+
+.slider .btns button:hover {
+    background: $color-rojo;
+    border: 3px solid $color-rojo;
+    color: #0e0e16;
+}
+
+.slide:hover {
+    border: 3px solid $color-rojo;
+}
+
+.slider {
+  --slider-padding: 1rem;
+  --slider-column-gap: 1rem;
+  --slide-width: 20%;
+  --slide-min-width: 15rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__track {
+  display: flex;
+  overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  padding-inline: var(--slider-padding);
+  scroll-behavior: smooth;
+  list-style-type: none;
+  padding: 0;
+  margin-right: calc(--var(slider-column-gap) * -1);
+  scrollbar-width: none;
+}
+
+.slider__track > * {
+  flex: 0 0 var(--slide-width);
+  min-width: var(--slide-min-width);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  padding-right: var(--slider-column-gap);
+}
+
+.slider__track::-webkit-scrollbar {
+  display: none;
+}
+
+.slider__buttons {
+  margin-top: 1rem;
+}
+
+.slider__buttons [disabled] {
+  opacity: 0.5;
+}
+
+.slide {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1/1;
+    position: relative;
+    border: 3px solid #383c4e;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.slideimg {
+	 width: 100%;
+	 border-radius: 10px;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1400px){
+	.container {
+		width: 90%;
+	}
+}
+
+@media (min-width: 1200px){
+	.menu ul {
+		display: flex;
+		justify-content: center;
+	}
+	.mob-icons {
+		display: none;
+	}
+}
+
+@media (max-width: 769px) {
+	.main_title {
+		font-size: 60px;
+		line-height: 60px;
+	}
+	.title {
+		font-size: 60px;
+	}
+}
+
+@media (max-width: 600px) {
+	.title {
+		font-size: 40px;
+	}
+	.main_title {
+		font-size: 40px;
+		line-height: 50px;
+	}
+	section.slider .title {
+		font-size: 40px;
+	}
+	button.slider__button {
+		width: 40px;
+		height: 40px;
+		font-size: 20px;
+	}
+    .slider .btns button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 426px) {
+	.main_title {
+		font-size: 35px;
+		line-height: 35px;
+	}
+	section.slider .title {
+		font-size: 30px;
+		top: 10px;
+	}
+}
+
+/* fin de carrosel */
+
+footer{
+    background-color: $color-blanco;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logo{
+    width: 150px;
+}
+
+.redesSociales{
+    display: flex;
+    list-style:none;
+    justify-content: space-between;
+    padding-right: 15%;
+}
+
+.copy{
+    text-align: center;
+    padding: 10px;
+}
+
+.copy2{
+    text-align: center;
+    padding-top: 10%;
+}
+
+.imagen{
+    width: 70%;
+}
+
+#cuerpo{
+    background-color: $color-blanco;
+    padding: 5%;
+}
+
+.ingresa{
+    display: flex;
+}
+
+.ingresa hr{
+    width: 100px;
+}
+
+.ingresa p{
+    padding: 3px 10px;
+    font-family: $tipo-fuente2;
+    color: $color-other1;
+}
+
+#label{
+    padding-bottom: 5%;
+}
+
+.olvidaste{
+    padding-top: 10%;
+    padding-left: 15%;
+    font-family: $tipo-fuente2;
+}
+
+.tituloLogin{
+    padding-bottom: 5%;
+    font-family: $tipo-fuente2;
+}
+
+.boton1{
+    color: $color-blanco;
+    padding: 15px 45px;
+    background-color: $color-other2;
+    border-radius: 100px;
+    text-decoration:none;
+}
+
+.boton1{
+    background: $color-negro;
+}
+
+.boton2{
+    color: $color-blanco;
+    padding: 15px 45px;
+    background-color: $color-rojo;
+    border-radius: 100px;
+    text-decoration:none;
+    margin-left: 5px;
+}
+
+.boton2{
+    background: #7c0000;
+}
+
+.boton3{
+    color: $color-blanco;
+    padding: 15px 45px;
+    background-color: $color-rojo;
+    border-radius: 100px;
+    text-decoration:none;
+    margin-left: 15%;
+}
+
+.boton3:hover{
+    background: #7c0000;
+}
+
+.miembro{
+    color: $color-other1;
+    margin-top: 10%;
+}
+
+.inicio{
+    color: $color-negro;
+    margin-top: 10%;
+}
+
+/* seccion de puntos de ventas */
+
+.contenedor-acordeon{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+}
+.contenedor-acordeon h2{
+    text-align: center;
+    font-size: $font-sizesH2;
+    margin-bottom: 35px;
+}
+.acordeon{
+    background: #fff;
+}
+.acordeon label{
+    border-radius: 20px 0px 20px 0px;
+    display: block;
+    padding: 20px;
+    font-size: $font-size;
+    background: #1c1c1c;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+}
+.acordeon label:hover{
+    background: #2e2e2e;
+}
+.acordeon .contenido-acordeon{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: 600px;
+    padding: 15px 0px;
+}
+.btn-acordeon{
+    display: none;
+}
+
+.btn-danger:hover{
+    background: #7c0000;
+}
+
+//PARTE MICA FORMULARIO DE CONTACTO
+h2 {
+    font-family: $tipo-fuente2;
+    font-size: $font-sizesH2;
+    font-weight: 600;
+}
+
+.caja-borde{
+    border: 1px;
+    border-radius: 25px;
+    background-color: rgba($color: #707070, $alpha: 0.20);
+}
+
+input, select {
+    border-radius: 10px;
+    height: 40px;
+    
+}
+
+textarea {
+    border-radius: 10px;
+    border: none;
+}
+
+p {
+    font-size: $font-size-P;
+    font-family: $tipo-fuente1;
+}
+
+label, input {
+    font-family: $tipo-fuente1;
+}
+
+.boton1{
+    color: $color-blanco;
+    padding: 15px 45px;
+    background-color: $color-rojo;
+    border-radius: 100px;
+    text-decoration:none;
+}
+
+.boton2-form {
+    color: $color-blanco;
+    padding: 10px 35px;
+    background-color: $color-rojo;
+    border-radius: 100px;
+    text-decoration:none;
+}
+
+//PARTE MICA PRODUCTO
+.carrusel-revistas {
+    .indicador {
+        text-indent: 0;
+        width: 100px;
+        img {
+            width: 100%;
+        }
+        margin-bottom: -45px;
+    }
+}
+
+.codigo-producto-tienda {
+    margin-top: 80px;
+}
+
+.borde-divisor {
+    border-bottom: solid 1px grey;
+    width: 80%;
+}
+
+.borde-divisor-2 {
+    border-bottom: solid 1px grey;
+    width: 90%;
+}
+
+.cuadro-cantidad {
+    width: 20%;
+    height: 33px;
+}
+
+.input-selector {
+    width: 25%;
+}
+
+.signo-menos {
+    border: solid 2px black;
+    padding-left: 9px;
+    padding-right: 9px;
+    
+}
+
+.signo-mas {
+    border: solid 2px black;
+    padding-left: 7px ;
+    padding-right: 7px;
+}
+
+.descuento {
+    border: solid 1px #6d6d6d;
+    padding-left: 7px ;
+    padding-right: 7px;
+}
+
+.fondo-color-gris-producto {
+    background-color: #f9f9f9;
+}
+
+.fondo-color-blanco-producto {
+    background-color: #FFFF;
+}
+
+//PARTE MICA METODO DE PAGO
+
+.cuadro-formulario {
+    border: solid 1px #cacaca;
+    border-radius: 10px;
+    background-color: #FFFF;
+}
+
+.borde-divisor-metodo-pago {
+    border-bottom: solid 1px grey;
+    width: 75%;
+}
+
+.borde-divisor-metodo-pago-1 {
+    border-bottom: solid 1px grey;
+    width: 100%;
+}
+
+.borde-divisor-metodo-pago-2 {
+    border-top: solid 1px grey;
+    width: 100%;
+}
+
+.signo-menos-pago {
+    border: solid 1px black;
+    padding-left: 9px;
+    padding-right: 9px;
+    
+}
+
+.signo-mas-pago {
+    border: solid 1px black;
+    padding-left: 7px;
+    padding-right: 7px;
+
+
+}
+
+.fondo-color-gris-pago {
+    background-color: #f9f9f9;
+}
+
+.boton2-form {
+    color: $color-blanco;
+    padding: 10px 35px;
+    background-color: $color-rojo;
+    border-radius: 100px;
+    text-decoration:none;
+}
+
+a {
+    color: white;
+}
+
+.exito-compra {
+    margin-top: 120px;
+}
